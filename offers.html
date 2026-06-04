@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Packages & Offers | Lotas Makeup Studio & Salon Bhopal</title>
+    <meta name="description" content="Explore special beauty packages and discounts at Lotas Makeup Studio & Salon. Save big with our festive, bridal, and hair care combos. Strictly for ladies.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Subtle Interactive Particle Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Background Ambient Glowing Nodes -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="header scrolled" id="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="Lotas Makeup Studio & Salon" class="logo-img">
+            </a>
+            
+            <nav class="nav" id="navbar-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="offers.html" class="nav-link active">Offers</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+                <a href="booking.html" class="nav-link">Book Now</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+                    <span class="icon">&#9788;</span>
+                </button>
+                <div class="burger-menu" id="burger-menu-btn" title="Toggle Mobile Navigation">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="section-padding" style="padding-top: 100px;">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 3rem;">
+                <p>Limited Time Discount Combos</p>
+                <h2>Exclusive Beauty Packages</h2>
+            </div>
+
+            <div style="text-align: center; margin-bottom: 4rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                <p style="color: var(--text-gray-light);">We understand that quality beauty services shouldn't break the bank. That's why we have created these specialized package deals combining your favorite hair, skin, and facial treatments at highly affordable prices. <strong>Save up to 50% compared to individual service rates!</strong></p>
+            </div>
+
+            <!-- Packages Grid -->
+            <div class="grid-3">
+                
+                <!-- Package Card 1 -->
+                <div class="glass-card" style="position: relative; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                    <div>
+                        <span class="offer-tag">Best Seller</span>
+                        <h3 class="font-display" style="font-size: 1.6rem; margin-top: 1.5rem; margin-bottom: 0.5rem;">Festive Glow Combo</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-gray-light); margin-bottom: 1.5rem;">Get party ready with this essential skincare and grooming package.</p>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <span class="price-strike">₹2,800</span>
+                            <span class="text-gradient" style="font-size: 2rem; font-weight: 700;">₹1,499</span>
+                        </div>
+                        
+                        <ul style="list-style: none; margin-bottom: 2.5rem; font-size: 0.88rem; color: var(--text-gray-light); display: flex; flex-direction: column; gap: 0.7rem;">
+                            <li>✓ Radiant Gold Facial (1 Session)</li>
+                            <li>✓ Relaxing Rose Pedicure</li>
+                            <li>✓ Matrix Luminous Hair Spa</li>
+                            <li>✓ Eyebrow & Upperlip Threading</li>
+                            <li>✓ Cooling Herbal Face Mask</li>
+                        </ul>
+                    </div>
+                    <a href="booking.html?service=pkg_festive" class="btn btn-neon" style="width: 100%;">Book Package</a>
+                </div>
+
+                <!-- Package Card 2 -->
+                <div class="glass-card" style="position: relative; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                    <div>
+                        <span class="offer-tag" style="background: var(--accent-violet); color: #ffffff;">Top Luxury</span>
+                        <h3 class="font-display" style="font-size: 1.6rem; margin-top: 1.5rem; margin-bottom: 0.5rem;">O3+ Bridal Glow Pack</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-gray-light); margin-bottom: 1.5rem;">Comprehensive luxury treatment for brides and special events.</p>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <span class="price-strike">₹6,500</span>
+                            <span class="text-gradient" style="font-size: 2rem; font-weight: 700;">₹3,999</span>
+                        </div>
+                        
+                        <ul style="list-style: none; margin-bottom: 2.5rem; font-size: 0.88rem; color: var(--text-gray-light); display: flex; flex-direction: column; gap: 0.7rem;">
+                            <li>✓ Premium O3+ Whitening Facial</li>
+                            <li>✓ Charcoal Detan Spa Therapy</li>
+                            <li>✓ Chocolate Manicure & Pedicure</li>
+                            <li>✓ Advance Hair Nourishing Spa</li>
+                            <li>✓ Full Underarms Honey Waxing</li>
+                        </ul>
+                    </div>
+                    <a href="booking.html?service=pkg_bridal" class="btn btn-neon" style="width: 100%;">Book Package</a>
+                </div>
+
+                <!-- Package Card 3 -->
+                <div class="glass-card" style="position: relative; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                    <div>
+                        <span class="offer-tag">Value Deal</span>
+                        <h3 class="font-display" style="font-size: 1.6rem; margin-top: 1.5rem; margin-bottom: 0.5rem;">Hair Transformation Pack</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-gray-light); margin-bottom: 1.5rem;">Complete restructuring and styling for gorgeous hair.</p>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <span class="price-strike">₹4,200</span>
+                            <span class="text-gradient" style="font-size: 2rem; font-weight: 700;">₹2,499</span>
+                        </div>
+                        
+                        <ul style="list-style: none; margin-bottom: 2.5rem; font-size: 0.88rem; color: var(--text-gray-light); display: flex; flex-direction: column; gap: 0.7rem;">
+                            <li>✓ Advanced Hair Cuts & Styling</li>
+                            <li>✓ L'Oreal Keratin Treatment</li>
+                            <li>✓ Split-Ends Removal Therapy</li>
+                            <li>✓ Post-Treatment Hair Wash</li>
+                            <li>✓ Professional Blow Dry Finish</li>
+                        </ul>
+                    </div>
+                    <a href="booking.html?service=pkg_hair" class="btn btn-neon" style="width: 100%;">Book Package</a>
+                </div>
+
+                <!-- Package Card 4 -->
+                <div class="glass-card" style="position: relative; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; height: 100%; margin-top: 2rem;">
+                    <div>
+                        <span class="offer-tag">Grooming Pack</span>
+                        <h3 class="font-display" style="font-size: 1.6rem; margin-top: 1.5rem; margin-bottom: 0.5rem;">Basic Grooming Combo</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-gray-light); margin-bottom: 1.5rem;">Quick monthly styling and basic body skincare deal.</p>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <span class="price-strike">₹1,800</span>
+                            <span class="text-gradient" style="font-size: 2rem; font-weight: 700;">₹999</span>
+                        </div>
+                        
+                        <ul style="list-style: none; margin-bottom: 2.5rem; font-size: 0.88rem; color: var(--text-gray-light); display: flex; flex-direction: column; gap: 0.7rem;">
+                            <li>✓ Honey Waxing (Arms & Underarms)</li>
+                            <li>✓ Fruit Clean-up Facial</li>
+                            <li>✓ Eyebrow Threading</li>
+                            <li>✓ Upperlip Threading</li>
+                            <li>✓ Gentle Head Massage (15 min)</li>
+                        </ul>
+                    </div>
+                    <a href="booking.html?service=pkg_basic" class="btn btn-neon" style="width: 100%;">Book Package</a>
+                </div>
+
+                <!-- Package Card 5 -->
+                <div class="glass-card" style="position: relative; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; height: 100%; margin-top: 2rem;">
+                    <div>
+                        <span class="offer-tag">Weekend Treat</span>
+                        <h3 class="font-display" style="font-size: 1.6rem; margin-top: 1.5rem; margin-bottom: 0.5rem;">Luxury Spa Special</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-gray-light); margin-bottom: 1.5rem;">Premium pampering packages to re-energize yourself.</p>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <span class="price-strike">₹3,500</span>
+                            <span class="text-gradient" style="font-size: 2rem; font-weight: 700;">₹1,999</span>
+                        </div>
+                        
+                        <ul style="list-style: none; margin-bottom: 2.5rem; font-size: 0.88rem; color: var(--text-gray-light); display: flex; flex-direction: column; gap: 0.7rem;">
+                            <li>✓ Deep Hair Spa & Steam (Matrix)</li>
+                            <li>✓ Charcoal Detan Exfoliation</li>
+                            <li>✓ Classic Manicure</li>
+                            <li>✓ Classic Pedicure</li>
+                            <li>✓ Upperlip Waxing</li>
+                        </ul>
+                    </div>
+                    <a href="booking.html?service=pkg_luxury" class="btn btn-neon" style="width: 100%;">Book Package</a>
+                </div>
+
+            </div>
+            
+            <!-- Notice/Disclaimer banner -->
+            <div class="glass-card" style="margin-top: 5rem; text-align: center; border-color: rgba(236, 64, 122, 0.3);">
+                <h4 class="font-display text-gradient" style="font-size: 1.4rem; margin-bottom: 1rem;">Need a Custom Combo?</h4>
+                <p style="color: var(--text-gray-light); max-width: 600px; margin: 0 auto; font-size: 0.9rem; margin-bottom: 1.5rem;">We are happy to build custom service packages based on your requirements. Contact us directly at the studio or call us to get personalized quotes.</p>
+                <a href="contact.html" class="btn btn-outline" style="font-size: 0.75rem; padding: 0.7rem 1.8rem;">Contact Studio</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid-4" style="gap: 3rem 1.5rem;">
+                <div>
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Lotas Makeup Studio & Salon" class="footer-logo-img">
+                    </div>
+                    <p class="footer-text">An exclusive, premium beauty and wellness oasis strictly for females. Located at Kolar Road, Bhopal. Affordable luxury treatments at your convenience.</p>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Owner & Salon</a></li>
+                        <li><a href="services.html">Services Price List</a></li>
+                        <li><a href="offers.html">Deals & Packages</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html?tab=hair">Hair Spa & Cut</a></li>
+                        <li><a href="services.html?tab=facials">Advanced Facials</a></li>
+                        <li><a href="services.html?tab=makeup">Bridal Makeup</a></li>
+                        <li><a href="services.html?tab=nails">Manicure & Nails</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Salon Sanctuary</h4>
+                    <ul class="footer-links">
+                        <li><a href="booking.html">Instant Appointment</a></li>
+                        <li><a href="reviews.html">Customer Reviews</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lotas Makeup Studio & Salon. All Rights Reserved. Strictly for Females.</p>
+                <p>Designed for Premium Beauty Experiences</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews & Feedback | Lotas Makeup Studio & Salon Bhopal</title>
+    <meta name="description" content="Read what ladies across Bhopal say about Lotas Makeup Studio & Salon. Explore over 200+ authentic ratings for hair cut, facials, nail extensions, and bridal makeup.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Subtle Interactive Particle Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Background Ambient Glowing Nodes -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="header scrolled" id="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="Lotas Makeup Studio & Salon" class="logo-img">
+            </a>
+            
+            <nav class="nav" id="navbar-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="offers.html" class="nav-link">Offers</a>
+                <a href="reviews.html" class="nav-link active">Reviews</a>
+                <a href="booking.html" class="nav-link">Book Now</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+                    <span class="icon">&#9788;</span>
+                </button>
+                <div class="burger-menu" id="burger-menu-btn" title="Toggle Mobile Navigation">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="section-padding" style="padding-top: 100px;">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 3rem;">
+                <p>Loved by Ladies Across Bhopal</p>
+                <h2>What Our Customers Say</h2>
+            </div>
+
+            <!-- Review Stats Header -->
+            <div class="glass-card" style="margin-bottom: 4rem; padding: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;">
+                <div>
+                    <h3 class="font-display text-gradient" style="font-size: 1.8rem; margin-bottom: 0.5rem;">4.9 Star Rating</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-gray-light);">Based on <strong id="reviews-count-display">200+</strong> verified local customer reviews</p>
+                </div>
+                <div class="stars" style="font-size: 2rem; margin: 0; display: flex; gap: 0.2rem;">
+                    ★ ★ ★ ★ ★
+                </div>
+                <div>
+                    <a href="booking.html" class="btn btn-neon" style="padding: 0.7rem 1.8rem; font-size: 0.75rem;">Write A Review</a>
+                </div>
+            </div>
+
+            <!-- Masonry Reviews Grid -->
+            <div class="reviews-grid-masonry" id="reviews-feed-container">
+                <!-- Dynamically populated in app.js -->
+            </div>
+
+            <!-- Load More Controls -->
+            <div class="see-more-reviews-container">
+                <button id="load-more-reviews-btn" class="btn btn-neon">See More Reviews</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid-4" style="gap: 3rem 1.5rem;">
+                <div>
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Lotas Makeup Studio & Salon" class="footer-logo-img">
+                    </div>
+                    <p class="footer-text">An exclusive, premium beauty and wellness oasis strictly for females. Located at Kolar Road, Bhopal. Affordable luxury treatments at your convenience.</p>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Owner & Salon</a></li>
+                        <li><a href="services.html">Services Price List</a></li>
+                        <li><a href="offers.html">Deals & Packages</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html?tab=hair">Hair Spa & Cut</a></li>
+                        <li><a href="services.html?tab=facials">Advanced Facials</a></li>
+                        <li><a href="services.html?tab=makeup">Bridal Makeup</a></li>
+                        <li><a href="services.html?tab=nails">Manicure & Nails</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Salon Sanctuary</h4>
+                    <ul class="footer-links">
+                        <li><a href="booking.html">Instant Appointment</a></li>
+                        <li><a href="reviews.html">Customer Reviews</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lotas Makeup Studio & Salon. All Rights Reserved. Strictly for Females.</p>
+                <p>Designed for Premium Beauty Experiences</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="reviews-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

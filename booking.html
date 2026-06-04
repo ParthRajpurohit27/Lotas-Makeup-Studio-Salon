@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book An Appointment | Lotas Makeup Studio & Salon Bhopal</title>
+    <meta name="description" content="Schedule your beauty salon visit at Lotas Makeup Studio & Salon. Select hair styling, facials, skin clean-up, bridal makeup, or nail art. Quick appointment booking.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Subtle Interactive Particle Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Background Ambient Glowing Nodes -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="header scrolled" id="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="Lotas Makeup Studio & Salon" class="logo-img">
+            </a>
+            
+            <nav class="nav" id="navbar-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="offers.html" class="nav-link">Offers</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+                <a href="booking.html" class="nav-link active">Book Now</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+                    <span class="icon">&#9788;</span>
+                </button>
+                <div class="burger-menu" id="burger-menu-btn" title="Toggle Mobile Navigation">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="section-padding" style="padding-top: 100px;">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 3rem;">
+                <p>Easy 3-Step Appointment Scheduler</p>
+                <h2>Book Your Studio Visit</h2>
+            </div>
+
+            <!-- Grid: Left is Wizard, Right is Summary -->
+            <div class="grid-2" style="align-items: start; gap: 3rem;">
+                
+                <!-- Booking Wizard Column -->
+                <div class="glass-card" style="padding: 2.5rem;">
+                    
+                    <!-- Wizard Step indicators -->
+                    <div class="wizard-steps">
+                        <div class="wizard-step active">
+                            1
+                            <span class="wizard-step-label">Services</span>
+                        </div>
+                        <div class="wizard-step">
+                            2
+                            <span class="wizard-step-label">Date & Time</span>
+                        </div>
+                        <div class="wizard-step">
+                            3
+                            <span class="wizard-step-label">Contact Info</span>
+                        </div>
+                    </div>
+
+                    <!-- Wizard Form -->
+                    <form id="booking-wizard-form" style="margin-top: 2rem;">
+                        
+                        <!-- STEP 1: SERVICE SELECTOR PANEL -->
+                        <div class="booking-panel active" id="step-panel-1">
+                            <h3 class="font-display text-gradient" style="font-size: 1.4rem; margin-bottom: 1rem;">Select Services</h3>
+                            <p style="font-size: 0.82rem; color: var(--text-gray-light); margin-bottom: 1.5rem;">You can select one or multiple services. Select packages by scrolling down.</p>
+                            
+                            <div class="services-selector-grid">
+                                
+                                <!-- Hair -->
+                                <div class="selector-option" data-service-id="hair_cut" data-service-name="Haircut & Styling" data-service-price="299">
+                                    <div class="selector-option-info">
+                                        <h4>Haircut & Wash</h4>
+                                        <p>Professional haircut & styling</p>
+                                    </div>
+                                    <span class="selector-option-price">₹299</span>
+                                </div>
+                                
+                                <div class="selector-option" data-service-id="hair_spa" data-service-name="Matrix Hair Spa" data-service-price="499">
+                                    <div class="selector-option-info">
+                                        <h4>Matrix Hair Spa</h4>
+                                        <p>Hair softening & conditioning</p>
+                                    </div>
+                                    <span class="selector-option-price">₹499</span>
+                                </div>
+
+                                <div class="selector-option" data-service-id="hair_smooth" data-service-name="Hair Smoothening" data-service-price="2999">
+                                    <div class="selector-option-info">
+                                        <h4>Hair Smoothening</h4>
+                                        <p>Frizz-free straight hair styling</p>
+                                    </div>
+                                    <span class="selector-option-price">₹2999</span>
+                                </div>
+
+                                <div class="selector-option" data-service-id="hair_keratin" data-service-name="L'Oreal Keratin Care" data-service-price="1999">
+                                    <div class="selector-option-info">
+                                        <h4>L'Oreal Keratin Care</h4>
+                                        <p>Protein reconstruction therapy</p>
+                                    </div>
+                                    <span class="selector-option-price">₹1999</span>
+                                </div>
+                                
+                                <!-- Facials -->
+                                <div class="selector-option" data-service-id="facial_gold" data-service-name="Gold Glow Facial" data-service-price="799">
+                                    <div class="selector-option-info">
+                                        <h4>Gold Glow Facial</h4>
+                                        <p>Elasticity restore & radiant skin</p>
+                                    </div>
+                                    <span class="selector-option-price">₹799</span>
+                                </div>
+
+                                <div class="selector-option" data-service-id="facial_o3" data-service-name="O3+ Whitening Facial" data-service-price="1499">
+                                    <div class="selector-option-info">
+                                        <h4>O3+ Whitening Facial</h4>
+                                        <p>Pigmentation & suntan clearing</p>
+                                    </div>
+                                    <span class="selector-option-price">₹1499</span>
+                                </div>
+
+                                <div class="selector-option" data-service-id="facial_hydra" data-service-name="Hydrafacial Glow" data-service-price="2499">
+                                    <div class="selector-option-info">
+                                        <h4>Hydrafacial Glow</h4>
+                                        <p>Deep vacuum cleansing & hydration</p>
+                                    </div>
+                                    <span class="selector-option-price">₹2499</span>
+                                </div>
+
+                                <!-- Waxing -->
+                                <div class="selector-option" data-service-id="wax_body" data-service-name="Full Body Waxing" data-service-price="799">
+                                    <div class="selector-option-info">
+                                        <h4>Full Body Waxing</h4>
+                                        <p>Arms, legs & underarms waxing</p>
+                                    </div>
+                                    <span class="selector-option-price">₹799</span>
+                                </div>
+
+                                <div class="selector-option" data-service-id="skin_fruit" data-service-name="Fruit Clean-Up" data-service-price="399">
+                                    <div class="selector-option-info">
+                                        <h4>Fruit Clean-Up</h4>
+                                        <p>Pore cleansing scrub & pack</p>
+                                    </div>
+                                    <span class="selector-option-price">₹399</span>
+                                </div>
+
+                                <!-- Makeup -->
+                                <div class="selector-option" data-service-id="makeup_bridal" data-service-name="Elite Bridal Makeup" data-service-price="6999">
+                                    <div class="selector-option-info">
+                                        <h4>Elite Bridal Makeup</h4>
+                                        <p>Nikky Bawa style full HD finish</p>
+                                    </div>
+                                    <span class="selector-option-price">₹6999</span>
+                                </div>
+
+                                <div class="selector-option" data-service-id="makeup_party" data-service-name="HD Party Makeup" data-service-price="1999">
+                                    <div class="selector-option-info">
+                                        <h4>HD Party Makeup</h4>
+                                        <p>Elegant wedding / party glow look</p>
+                                    </div>
+                                    <span class="selector-option-price">₹1999</span>
+                                </div>
+
+                                <!-- Nails -->
+                                <div class="selector-option" data-service-id="nails_gel" data-service-name="Gel Extensions & Art" data-service-price="999">
+                                    <div class="selector-option-info">
+                                        <h4>Gel Extensions & Art</h4>
+                                        <p>Acrylic extension with custom art</p>
+                                    </div>
+                                    <span class="selector-option-price">₹999</span>
+                                </div>
+
+                                <div class="selector-option" data-service-id="nails_pedi" data-service-name="Spa Pedicure & Manicure" data-service-price="799">
+                                    <div class="selector-option-info">
+                                        <h4>Spa Pedi & Mani</h4>
+                                        <p>Arm, leg massage & polish</p>
+                                    </div>
+                                    <span class="selector-option-price">₹799</span>
+                                </div>
+                                
+                                <!-- Special Promo Packages -->
+                                <div class="selector-option" data-service-id="pkg_festive" data-service-name="Festive Glow Combo" data-service-price="1499">
+                                    <div class="selector-option-info">
+                                        <h4>★ Festive Glow Combo</h4>
+                                        <p>Gold Facial + Pedicure + Hair Spa + Threading</p>
+                                    </div>
+                                    <span class="selector-option-price">₹1499</span>
+                                </div>
+
+                                <div class="selector-option" data-service-id="pkg_bridal" data-service-name="O3+ Bridal Glow Pack" data-service-price="3999">
+                                    <div class="selector-option-info">
+                                        <h4>★ O3+ Bridal Glow Pack</h4>
+                                        <p>Premium Facial + Body Detan + Pedicure + Hair Spa</p>
+                                    </div>
+                                    <span class="selector-option-price">₹3999</span>
+                                </div>
+
+                                <div class="selector-option" data-service-id="pkg_hair" data-service-name="Hair Transformation Pack" data-service-price="2499">
+                                    <div class="selector-option-info">
+                                        <h4>★ Hair Transformation Pack</h4>
+                                        <p>Haircut + L'Oreal Keratin + Blow Dry</p>
+                                    </div>
+                                    <span class="selector-option-price">₹2499</span>
+                                </div>
+
+                                <div class="selector-option" data-service-id="pkg_basic" data-service-name="Basic Grooming Combo" data-service-price="999">
+                                    <div class="selector-option-info">
+                                        <h4>★ Basic Grooming Combo</h4>
+                                        <p>Waxing + Clean-up + Threading + Head Massage</p>
+                                    </div>
+                                    <span class="selector-option-price">₹999</span>
+                                </div>
+
+                                <div class="selector-option" data-service-id="pkg_luxury" data-service-name="Luxury Spa Special" data-service-price="1999">
+                                    <div class="selector-option-info">
+                                        <h4>★ Luxury Spa Special</h4>
+                                        <p>Hair Spa + Charcoal Detan + Mani & Pedi</p>
+                                    </div>
+                                    <span class="selector-option-price">₹1999</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- STEP 2: DATE & TIME PANEL -->
+                        <div class="booking-panel" id="step-panel-2">
+                            <h3 class="font-display text-gradient" style="font-size: 1.4rem; margin-bottom: 1.5rem;">Select Date & Time</h3>
+                            
+                            <div class="form-group">
+                                <label for="booking-date" class="form-label">Preferred Appointment Date</label>
+                                <input type="date" id="booking-date" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group" style="margin-top: 2rem;">
+                                <label for="booking-time" class="form-label">Preferred Appointment Time</label>
+                                <select id="booking-time" class="form-control" required>
+                                    <option value="" disabled selected>-- Select a Time Slot --</option>
+                                    <option value="10:30 AM">10:30 AM (Opening Slot)</option>
+                                    <option value="11:30 AM">11:30 AM</option>
+                                    <option value="12:30 PM">12:30 PM</option>
+                                    <option value="01:30 PM">01:30 PM</option>
+                                    <option value="02:30 PM">02:30 PM</option>
+                                    <option value="03:30 PM">03:30 PM</option>
+                                    <option value="04:30 PM">04:30 PM</option>
+                                    <option value="05:30 PM">05:30 PM</option>
+                                    <option value="06:30 PM">06:30 PM</option>
+                                    <option value="07:30 PM">07:30 PM (Last Booking)</option>
+                                </select>
+                            </div>
+
+                            <p style="font-size: 0.75rem; color: var(--text-gray-light); margin-top: 1.5rem;">Our business hours are everyday between <strong>10:30 AM and 08:30 PM</strong>. Please select slots within this range.</p>
+                        </div>
+
+                        <!-- STEP 3: CONTACT INFORMATION PANEL -->
+                        <div class="booking-panel" id="step-panel-3">
+                            <h3 class="font-display text-gradient" style="font-size: 1.4rem; margin-bottom: 1.5rem;">Contact Information</h3>
+                            
+                            <div class="form-group">
+                                <label for="client-name" class="form-label">Your Full Name</label>
+                                <input type="text" id="client-name" class="form-control" placeholder="Enter your name" required>
+                            </div>
+                            
+                            <div class="form-group-row" style="margin-top: 1.5rem;">
+                                <div class="form-group">
+                                    <label for="client-phone" class="form-label">Mobile Number</label>
+                                    <input type="tel" id="client-phone" class="form-control" placeholder="10-digit phone number" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-email" class="form-label">Email Address (Optional)</label>
+                                    <input type="email" id="client-email" class="form-control" placeholder="name@domain.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="client-notes" class="form-label">Special Requests (Optional)</label>
+                                <textarea id="client-notes" class="form-control" rows="3" placeholder="Tell us if you have any skin sensitivity, hair requests, or service preferences..."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Wizard Footer Buttons -->
+                        <div class="wizard-footer">
+                            <button id="booking-prev-btn" class="btn btn-outline" style="padding: 0.7rem 1.8rem; font-size: 0.8rem; border-radius: 50px;">&larr; Back</button>
+                            <button id="booking-next-btn" class="btn btn-neon" style="padding: 0.7rem 2.2rem; font-size: 0.8rem;">Next Step &rarr;</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- Live Booking Summary Column -->
+                <div class="glass-card" style="padding: 2.5rem; border-color: rgba(126, 87, 194, 0.25);">
+                    <h3 class="font-display text-gradient" style="font-size: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding-bottom: 0.8rem;">Appointment Summary</h3>
+                    
+                    <div class="booking-summary-box">
+                        <h4 style="font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem; color: var(--accent-pink);">Selected Services</h4>
+                        
+                        <div id="summary-services-list">
+                            <div class="summary-row" style="color: var(--text-gray-light)">No services selected yet.</div>
+                        </div>
+                        
+                        <div class="summary-row total">
+                            <span>Estimated Total</span>
+                            <span id="summary-total-price">₹0</span>
+                        </div>
+                    </div>
+                    
+                    <div style="background: rgba(236, 64, 122, 0.05); border: 1px solid rgba(236, 64, 122, 0.2); padding: 1.2rem; border-radius: 6px; font-size: 0.82rem; color: var(--text-light); text-align: left;">
+                        <span style="color: var(--accent-pink); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.3rem;">⚠️ Female Sanctuary Warning</span>
+                        Please note that Lotas Makeup Studio is strictly a <strong>females-only salon</strong>. Male family members or friends are not allowed inside the waiting lounge or work areas for safety and comfort. Thank you for your cooperation!
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Successful Booking Modal Overlay -->
+    <div class="modal-overlay" id="booking-success-modal">
+        <div class="modal-content">
+            <div class="modal-icon">&#10004;</div>
+            <h2 class="modal-title font-display text-gradient">Appointment Received!</h2>
+            <div class="modal-body">
+                <p style="margin-bottom: 1rem;">Thank you! Your appointment booking has been pre-scheduled successfully.</p>
+                <div style="background: rgba(126, 87, 194, 0.08); padding: 1rem; border: 1px dashed var(--accent-pink); border-radius: 6px; margin-bottom: 1.5rem; text-align: left;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.4rem;">
+                        <strong>Reference ID:</strong>
+                        <span id="modal-booking-ref" class="text-gradient" style="font-weight: 700;">LBL-000000</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.4rem;">
+                        <strong>Client Name:</strong>
+                        <span id="modal-client-name" style="font-weight: 600;">Client</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
+                        <strong>Schedule Time:</strong>
+                        <span id="modal-booking-date" style="font-weight: 600;">Date Time</span>
+                    </div>
+                </div>
+                <p style="font-size: 0.78rem; color: var(--text-gray-light);">A copy of this confirmation has been generated. Please arrive 10 minutes prior to your booking. Payment is collected at the salon counter post-service.</p>
+            </div>
+            <button id="close-modal-btn" class="btn btn-neon" style="padding: 0.7rem 2rem; font-size: 0.8rem;">Return To Scheduler</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid-4" style="gap: 3rem 1.5rem;">
+                <div>
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Lotas Makeup Studio & Salon" class="footer-logo-img">
+                    </div>
+                    <p class="footer-text">An exclusive, premium beauty and wellness oasis strictly for females. Located at Kolar Road, Bhopal. Affordable luxury treatments at your convenience.</p>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Owner & Salon</a></li>
+                        <li><a href="services.html">Services Price List</a></li>
+                        <li><a href="offers.html">Deals & Packages</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html?tab=hair">Hair Spa & Cut</a></li>
+                        <li><a href="services.html?tab=facials">Advanced Facials</a></li>
+                        <li><a href="services.html?tab=makeup">Bridal Makeup</a></li>
+                        <li><a href="services.html?tab=nails">Manicure & Nails</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Salon Sanctuary</h4>
+                    <ul class="footer-links">
+                        <li><a href="booking.html">Instant Appointment</a></li>
+                        <li><a href="reviews.html">Customer Reviews</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lotas Makeup Studio & Salon. All Rights Reserved. Strictly for Females.</p>
+                <p>Designed for Premium Beauty Experiences</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Tanu & Lotas Beauty Lounge | Ladies Only Salon Bhopal</title>
+    <meta name="description" content="Discover the story behind Lotas Makeup Studio & Salon. Led by professional stylist Tanu (trained at Nikky Bawa). Strictly female-only premium AC salon.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Subtle Interactive Particle Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Background Ambient Glowing Nodes -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="header scrolled" id="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="Lotas Makeup Studio & Salon" class="logo-img">
+            </a>
+            
+            <nav class="nav" id="navbar-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="offers.html" class="nav-link">Offers</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+                <a href="booking.html" class="nav-link">Book Now</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+                    <span class="icon">&#9788;</span>
+                </button>
+                <div class="burger-menu" id="burger-menu-btn" title="Toggle Mobile Navigation">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="section-padding" style="padding-top: 100px;">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 3rem;">
+                <p>Get to Know Us</p>
+                <h2>About our Studio</h2>
+            </div>
+
+            <!-- Intro Info Grid -->
+            <div class="grid-2" style="margin-bottom: 5rem;">
+                <div>
+                    <div class="ladies-only-badge">Ladies Only Sanctuary</div>
+                    <h3 class="font-display text-gradient" style="font-size: 2rem; margin-bottom: 1.5rem; line-height: 1.3;">Our Vision & Design</h3>
+                    <p style="color: var(--text-gray-light); margin-bottom: 1.2rem;">Lotas Makeup Studio & Salon is a premium, specialized space created specifically and exclusively for females. We believe that every woman deserves a relaxing, secure, and comfortable atmosphere where she can untangle from daily stress and receive top-tier self-care treatments.</p>
+                    <p style="color: var(--text-gray-light); margin-bottom: 1.2rem;">Unlike general family salons, our strictly <strong>females-only policy</strong> ensures full privacy and peace of mind for all our ladies and girls. Our sanctuary is fully air-conditioned (A/C facility), providing a serene escape from Bhopal's heat, accompanied by soothing music and a luxurious modern ambiance.</p>
+                    <p style="color: var(--text-gray-light);">We focus on delivering high-end results using premium quality cosmetics combined with highly affordable pricing. Luxury is no longer an expensive choice at Lotas Studio.</p>
+                </div>
+                <div>
+                    <img src="assets/hero_bg.png" alt="Salon Sanctuary Interior" class="about-img">
+                </div>
+            </div>
+
+            <!-- Owner Profile Row -->
+            <div class="glass-card" style="padding: 3rem; margin-bottom: 5rem;">
+                <div class="grid-2">
+                    <div style="order: 2;">
+                        <div class="ladies-only-badge">Meet the Founder & Lead Artist</div>
+                        <h3 class="font-display text-gradient" style="font-size: 2.2rem; margin-bottom: 1.5rem;">Tanu</h3>
+                        <h5 style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 1.5rem; color: var(--text-gray-light);">Certified Hair, Skin, & Makeup Professional</h5>
+                        <p style="color: var(--text-gray-light); margin-bottom: 1.2rem;">With a deep passion for aesthetics and styling, <strong>Tanu</strong> has dedicated over a decade to the beauty industry. She is a fully certified professional who has completed advanced diplomas in makeup, hair designing, skincare, and therapeutic facials at the prestigious <strong>Nikky Bawa Parlour</strong>—one of the largest and most renowned salon academies in Central India.</p>
+                        <p style="color: var(--text-gray-light); margin-bottom: 1.2rem;">Before establishing Lotas Makeup Studio, Tanu refined her professional techniques by working alongside industry veterans and collaborating with top-tier brands, including <strong>Matrix Professional Salons</strong> and Nikki Bawa studios. This rich experience allows her to understand client requirements deeply, custom-tailoring haircuts and makeup profiles to enhance each client's unique facial structure.</p>
+                        <p style="color: var(--text-gray-light);">Under her guidance, the entire salon staff is trained to maintain rigorous standards of hygiene, gentle care, and professional handling.</p>
+                    </div>
+                    <div style="order: 1; position: relative;">
+                        <img src="assets/service_makeup.png" alt="Stylist at work" class="about-img" style="max-height: 450px; object-fit: cover;">
+                        <div class="experience-badge" style="top: 20px; left: -20px; bottom: auto; right: auto;">
+                            <span>10+ Yrs</span>
+                            <p>Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Infrastructure details -->
+            <div class="section-header" style="margin-bottom: 3.5rem;">
+                <p>Infrastructure & Amenities</p>
+                <h2>Equipped For Professional Excellence</h2>
+            </div>
+            
+            <div class="grid-3" style="margin-bottom: 2rem;">
+                <div class="glass-card text-center" style="text-align: center;">
+                    <div class="text-gradient" style="font-size: 2.5rem; margin-bottom: 1rem;">&#10024;</div>
+                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.8rem;">Premium Equipments</h4>
+                    <p style="font-size: 0.88rem; color: var(--text-gray-light);">Our lounge is equipped with all premium and necessary modern machines for advanced skincare, facial therapies, and safe, precise hair operations.</p>
+                </div>
+                
+                <div class="glass-card text-center" style="text-align: center;">
+                    <div class="text-gradient" style="font-size: 2.5rem; margin-bottom: 1rem;">&#10052;</div>
+                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.8rem;">Full A/C Facility</h4>
+                    <p style="font-size: 0.88rem; color: var(--text-gray-light);">Enjoy a peaceful, fully air-conditioned room setting. Clean air, perfect ambient temperatures, and complete relaxation are guaranteed during treatments.</p>
+                </div>
+                
+                <div class="glass-card text-center" style="text-align: center;">
+                    <div class="text-gradient" style="font-size: 2.5rem; margin-bottom: 1rem;">&#128080;</div>
+                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.8rem;">Hygienic Standards</h4>
+                    <p style="font-size: 0.88rem; color: var(--text-gray-light);">Strict health protocols. All tools, salon chairs, hair wash bowls, and skin-touching components are thoroughly sterilized after every client's visit.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <h4 class="font-display" style="font-size: 1.5rem; margin-bottom: 1.5rem;">Ready to experience the ultimate ladies-only treatment?</h4>
+                <a href="booking.html" class="btn btn-neon">Book Your Appointment Now</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid-4" style="gap: 3rem 1.5rem;">
+                <div>
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Lotas Makeup Studio & Salon" class="footer-logo-img">
+                    </div>
+                    <p class="footer-text">An exclusive, premium beauty and wellness oasis strictly for females. Located at Kolar Road, Bhopal. Affordable luxury treatments at your convenience.</p>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Owner & Salon</a></li>
+                        <li><a href="services.html">Services Price List</a></li>
+                        <li><a href="offers.html">Deals & Packages</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html?tab=hair">Hair Spa & Cut</a></li>
+                        <li><a href="services.html?tab=facials">Advanced Facials</a></li>
+                        <li><a href="services.html?tab=makeup">Bridal Makeup</a></li>
+                        <li><a href="services.html?tab=nails">Manicure & Nails</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Salon Sanctuary</h4>
+                    <ul class="footer-links">
+                        <li><a href="booking.html">Instant Appointment</a></li>
+                        <li><a href="reviews.html">Customer Reviews</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lotas Makeup Studio & Salon. All Rights Reserved. Strictly for Females.</p>
+                <p>Designed for Premium Beauty Experiences</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotas Makeup Studio & Salon | Ladies Only Salon Bhopal</title>
+    <meta name="description" content="Welcome to Lotas Makeup Studio & Salon on Kolar Road, Bhopal. An exclusive premium salon for ladies offering hair, skin care, makeup, and nails at affordable prices.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Subtle Interactive Particle Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Background Ambient Glowing Nodes -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="header" id="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="Lotas Makeup Studio & Salon" class="logo-img">
+            </a>
+            
+            <nav class="nav" id="navbar-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="offers.html" class="nav-link">Offers</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+                <a href="booking.html" class="nav-link">Book Now</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+                    <span class="icon">&#9788;</span>
+                </button>
+                <div class="burger-menu" id="burger-menu-btn" title="Toggle Mobile Navigation">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 0;">
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg" style="background-image: url('assets/hero_bg.png');"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="ladies-only-badge">Strictly Females Only</div>
+                    <h1 class="font-display">
+                        <span class="hero-studio-name">Lotas</span>
+                        <span class="text-gradient">Makeup Studio & Salon</span>
+                    </h1>
+                    <p>Experience Bhopal's ultimate ladies-only beauty sanctuary. Equipped with premium quality infrastructure and fully air-conditioned spaces, we bring you world-class services at prices that make you smile.</p>
+                    <div class="hero-btns">
+                        <a href="booking.html" class="btn btn-neon">Book Appointment</a>
+                        <a href="services.html" class="btn btn-outline">Explore Studio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legacy & Trust Banner (About owner short summary) -->
+        <section class="section-padding" style="background: rgba(126, 87, 194, 0.02); border-top: 1px solid rgba(255, 255, 255, 0.03); border-bottom: 1px solid rgba(255, 255, 255, 0.03);">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="about-image-wrapper">
+                        <img src="assets/service_skin.png" alt="Skincare Spa" class="about-img">
+                        <div class="experience-badge">
+                            <span>10+</span>
+                            <p>Years of Legacy</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ladies-only-badge">Our Legacy</div>
+                        <h2 class="font-display text-gradient" style="font-size: 2.2rem; margin-bottom: 1.5rem; line-height: 1.2;">A Trusted Sanctuary for Bhopal's Ladies</h2>
+                        <p style="color: var(--text-gray-light); margin-bottom: 1.2rem;">For over a decade, we have been providing premium beauty transformations to women across Bhopal. Our salon is a safe, strictly female-only environment designed for your maximum comfort.</p>
+                        <p style="color: var(--text-gray-light); margin-bottom: 1.5rem;">Led by <strong>Tanu</strong>, a highly professional stylist trained at the renowned <em>Nikky Bawa Parlour</em>, who has extensive experience working with top-tier brands like <em>Matrix Professional</em>. Here, your hair, skin, and makeup are in the hands of a certified expert.</p>
+                        <div style="display: flex; gap: 2rem; margin-top: 2rem;">
+                            <div>
+                                <h4 class="text-gradient" style="font-size: 1.2rem; font-weight: 700;">100% Female Space</h4>
+                                <p style="font-size: 0.8rem; color: var(--text-gray-light);">Completely secure & comfortable</p>
+                            </div>
+                            <div>
+                                <h4 class="text-gradient" style="font-size: 1.2rem; font-weight: 700;">Premium Brands</h4>
+                                <p style="font-size: 0.8rem; color: var(--text-gray-light);">Matrix Professional products</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 2.5rem;">
+                            <a href="about.html" class="btn btn-outline">Read Our Full Story</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Highlights (Simplified premium lounge focus, not dry menu cards) -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <p>What We Specialize In</p>
+                    <h2>Our Signature Experiences</h2>
+                </div>
+                
+                <div class="grid-3">
+                    <!-- Hair -->
+                    <div class="glass-card service-card">
+                        <div class="service-img-container">
+                            <img src="assets/service_hair.png" alt="Hair Styling" class="service-card-img">
+                            <div class="service-overlay"></div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-header-row">
+                                <h3 class="service-title">Matrix Hair Artistry</h3>
+                            </div>
+                            <p class="service-description">Professional haircut, smoothing, straightening, spa, and creative coloring by certified experts using Matrix products.</p>
+                            <a href="services.html?tab=hair" class="text-gradient" style="font-weight: 600; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase;">View Hair Treatments &rarr;</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Facials -->
+                    <div class="glass-card service-card">
+                        <div class="service-img-container">
+                            <img src="assets/service_skin.png" alt="Facial treatment" class="service-card-img">
+                            <div class="service-overlay"></div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-header-row">
+                                <h3 class="service-title">Advanced Skincare Spa</h3>
+                            </div>
+                            <p class="service-description">From premium Bridal glow facial setups to modern skin therapy and detanning. Rejuvenating treatments to bring out your natural glow.</p>
+                            <a href="services.html?tab=facials" class="text-gradient" style="font-weight: 600; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase;">View Skin Treatments &rarr;</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Makeup -->
+                    <div class="glass-card service-card">
+                        <div class="service-img-container">
+                            <img src="assets/service_makeup.png" alt="Professional Makeup" class="service-card-img">
+                            <div class="service-overlay"></div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-header-row">
+                                <h3 class="service-title">Masterclass Makeup</h3>
+                            </div>
+                            <p class="service-description">Stunning bridal, party, and HD makeup looks curated by Tanu, trained under Nikki Bawa's masterclasses.</p>
+                            <a href="services.html?tab=makeup" class="text-gradient" style="font-weight: 600; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase;">View Makeup Profiles &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3.5rem;">
+                    <a href="services.html" class="btn btn-neon">View Full Studio Catalog</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Offers & Packages (Most Important to Attract Customer) -->
+        <section class="section-padding" style="background: rgba(126, 87, 194, 0.01); border-top: 1px solid rgba(255, 255, 255, 0.02);">
+            <div class="container">
+                <div class="section-header">
+                    <p>Exclusive Deals</p>
+                    <h2>Hot Packages & Seasonal Offers</h2>
+                </div>
+                
+                <div class="grid-3">
+                    <!-- Package 1 -->
+                    <div class="glass-card" style="position: relative; padding: 2rem;">
+                        <span class="offer-tag">Best Seller</span>
+                        <h3 class="font-display" style="font-size: 1.5rem; margin-top: 1.5rem; margin-bottom: 0.5rem;">Festive Glow Combo</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-gray-light); margin-bottom: 1.5rem;">Get party ready with this essential skincare and grooming package.</p>
+                        <div style="margin-bottom: 2rem;">
+                            <span class="price-strike">₹2,800</span>
+                            <span class="text-gradient" style="font-size: 1.8rem; font-weight: 700;">₹1,499</span>
+                        </div>
+                        <ul style="list-style: none; margin-bottom: 2rem; font-size: 0.85rem; color: var(--text-gray-light); display: flex; flex-direction: column; gap: 0.5rem;">
+                            <li>✓ Radiant Gold Facial</li>
+                            <li>✓ Relaxing Rose Pedicure</li>
+                            <li>✓ Matrix Luminous Hair Spa</li>
+                            <li>✓ Eyebrow & Upperlip Threading</li>
+                        </ul>
+                        <a href="booking.html?service=pkg_festive" class="btn btn-neon" style="width: 100%; padding: 0.7rem 1.5rem; font-size: 0.75rem;">Book This Package</a>
+                    </div>
+                    
+                    <!-- Package 2 -->
+                    <div class="glass-card" style="position: relative; padding: 2rem;">
+                        <span class="offer-tag" style="background: var(--accent-violet); color: #ffffff;">Top Luxury</span>
+                        <h3 class="font-display" style="font-size: 1.5rem; margin-top: 1.5rem; margin-bottom: 0.5rem;">O3+ Bridal Glow Pack</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-gray-light); margin-bottom: 1.5rem;">Premium Bridal prep pack for instant shine</p>
+                        <div style="margin-bottom: 2rem;">
+                            <span class="price-strike">₹6,500</span>
+                            <span class="text-gradient" style="font-size: 1.8rem; font-weight: 700;">₹3,999</span>
+                        </div>
+                        <ul style="list-style: none; margin-bottom: 2rem; font-size: 0.85rem; color: var(--text-gray-light); display: flex; flex-direction: column; gap: 0.5rem;">
+                            <li>✓ Premium O3+ Whitening Facial</li>
+                            <li>✓ Charcoal Detan Spa Therapy</li>
+                            <li>✓ Chocolate Manicure & Pedicure</li>
+                            <li>✓ Advance Hair Nourishing Spa</li>
+                        </ul>
+                        <a href="booking.html?service=pkg_bridal" class="btn btn-neon" style="width: 100%; padding: 0.7rem 1.5rem; font-size: 0.75rem;">Book This Package</a>
+                    </div>
+                    
+                    <!-- Package 3 -->
+                    <div class="glass-card" style="position: relative; padding: 2rem;">
+                        <span class="offer-tag">Value Deal</span>
+                        <h3 class="font-display" style="font-size: 1.5rem; margin-top: 1.5rem; margin-bottom: 0.5rem;">Hair Transformation Pack</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-gray-light); margin-bottom: 1.5rem;">Complete hair treatment styling</p>
+                        <div style="margin-bottom: 2rem;">
+                            <span class="price-strike">₹4,200</span>
+                            <span class="text-gradient" style="font-size: 1.8rem; font-weight: 700;">₹2,499</span>
+                        </div>
+                        <ul style="list-style: none; margin-bottom: 2rem; font-size: 0.85rem; color: var(--text-gray-light); display: flex; flex-direction: column; gap: 0.5rem;">
+                            <li>✓ Advanced Hair Cuts & Styling</li>
+                            <li>✓ L'Oreal Keratin Treatment</li>
+                            <li>✓ Split-Ends Removal Therapy</li>
+                            <li>✓ Post-Treatment Hair Wash</li>
+                        </ul>
+                        <a href="booking.html?service=pkg_hair" class="btn btn-neon" style="width: 100%; padding: 0.7rem 1.5rem; font-size: 0.75rem;">Book This Package</a>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3.5rem;">
+                    <a href="offers.html" class="btn btn-outline">View All Special Offers</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Highlight Carousel (No location addresses displayed) -->
+        <section class="section-padding testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <p>Client Love</p>
+                    <h2>What Our Customers Say</h2>
+                </div>
+                
+                <div class="carousel-container" id="testimonial-carousel">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-avatar">A</div>
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"mujhe bohut acha laga they are very friendly. I got my hair spa done. Prices are really affordable and ambience is very comfortable since it is only for ladies."</p>
+                        <h4 class="testimonial-author">Anjali Sharma</h4>
+                        <p class="testimonial-date">Yesterday</p>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-avatar">P</div>
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"bohut acha hai acha facial kara hai. Skin is glowing! Fully air-conditioned and hygienic parlour. Recommended to all."</p>
+                        <h4 class="testimonial-author">Pooja Gupta</h4>
+                        <p class="testimonial-date">2 days ago</p>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-avatar">R</div>
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"profestional staff done haircut very good. Staff behavior is extremely polite. They sanitize all equipment, which makes it safe and trustworthy."</p>
+                        <h4 class="testimonial-author">Ritu</h4>
+                        <p class="testimonial-date">3 days ago</p>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="carousel-prev" title="Previous Review">&larr;</button>
+                    <button class="carousel-btn" id="carousel-next" title="Next Review">&rarr;</button>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="reviews.html" class="btn btn-outline" style="font-size: 0.75rem; padding: 0.7rem 1.8rem;">See All 200+ Reviews</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Opening Hours & Maps Section -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="grid-2">
+                    <div>
+                        <div class="ladies-only-badge">Find Us</div>
+                        <h2 class="font-display text-gradient" style="font-size: 2.2rem; margin-bottom: 1.5rem;">Visit the Studio</h2>
+                        
+                        <div class="contact-info-list" style="margin-top: 2rem;">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">&#128205;</div>
+                                <div class="contact-info-details">
+                                    <h4>Our Studio Address</h4>
+                                    <p>First Floor, Sarvdhram B Sector, Kolar Road, Bhopal (Near Vishal Mega Mart), Madhya Pradesh - 462042</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">&#128338;</div>
+                                <div class="contact-info-details">
+                                    <h4>Lounge Timings</h4>
+                                    <p>Everyday: 10:30 AM – 08:30 PM</p>
+                                    <div style="margin-top: 0.5rem;">
+                                        <div class="open-status-badge open">
+                                            <span class="status-dot pulsing"></span>
+                                            <span class="status-text">Open Now</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">&#9742;</div>
+                                <div class="contact-info-details">
+                                    <h4>Call / WhatsApp</h4>
+                                    <p>+91 9981286212 (For Inquiries)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <!-- Faux Google Maps component -->
+                        <div class="map-mockup-wrapper">
+                            <div class="map-card-popup">
+                                <h5>Lotas Makeup Studio</h5>
+                                <p>First Floor, Sarvdhram B Sector, Kolar Road, Near Vishal Mega Mart, Bhopal</p>
+                                <a href="https://maps.google.com" target="_blank" class="text-gradient" style="font-size: 0.65rem; font-weight: 700; text-transform: uppercase; margin-top: 0.5rem; display: inline-block;">Get Directions &rarr;</a>
+                            </div>
+                            <div class="map-mockup">
+                                <div class="map-route-line map-route-1"></div>
+                                <div class="map-route-line map-route-2"></div>
+                                <div class="map-route-line map-route-3"></div>
+                                <div class="map-route-line map-route-4"></div>
+                            </div>
+                            <div class="map-pin">
+                                <div class="map-pin-pulse"></div>
+                                <div class="map-pin-dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid-4" style="gap: 3rem 1.5rem;">
+                <div>
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Lotas Makeup Studio & Salon" class="footer-logo-img">
+                    </div>
+                    <p class="footer-text">An exclusive, premium beauty and wellness oasis strictly for females. Located at Kolar Road, Bhopal. Affordable luxury treatments at your convenience.</p>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Owner & Salon</a></li>
+                        <li><a href="services.html">Services Price List</a></li>
+                        <li><a href="offers.html">Deals & Packages</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html?tab=hair">Hair Spa & Cut</a></li>
+                        <li><a href="services.html?tab=facials">Advanced Facials</a></li>
+                        <li><a href="services.html?tab=makeup">Bridal Makeup</a></li>
+                        <li><a href="services.html?tab=nails">Manicure & Nails</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Salon Sanctuary</h4>
+                    <ul class="footer-links">
+                        <li><a href="booking.html">Instant Appointment</a></li>
+                        <li><a href="reviews.html">Customer Reviews</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lotas Makeup Studio & Salon. All Rights Reserved. Strictly for Females.</p>
+                <p>Designed for Premium Beauty Experiences</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

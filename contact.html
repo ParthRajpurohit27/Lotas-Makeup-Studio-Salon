@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & FAQ | Lotas Makeup Studio & Salon Bhopal</title>
+    <meta name="description" content="Get in touch with Lotas Makeup Studio & Salon. Location details near Vishal Mega Mart Kolar Road, contact phone numbers, salon hours, and customer FAQs.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Subtle Interactive Particle Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Background Ambient Glowing Nodes -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="header scrolled" id="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="Lotas Makeup Studio & Salon" class="logo-img">
+            </a>
+            
+            <nav class="nav" id="navbar-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="offers.html" class="nav-link">Offers</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+                <a href="booking.html" class="nav-link">Book Now</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+                    <span class="icon">&#9788;</span>
+                </button>
+                <div class="burger-menu" id="burger-menu-btn" title="Toggle Mobile Navigation">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="section-padding" style="padding-top: 100px;">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 3.5rem;">
+                <p>Have Questions? Get in Touch</p>
+                <h2>Contact & Location</h2>
+            </div>
+
+            <!-- Grid: Info and Contact Form -->
+            <div class="grid-2" style="align-items: start; gap: 3rem; margin-bottom: 5rem;">
+                
+                <!-- Contact Info and Map -->
+                <div>
+                    <div class="ladies-only-badge">Bhopal Studio</div>
+                    <h3 class="font-display text-gradient" style="font-size: 1.8rem; margin-bottom: 1.5rem;">Visit the Studio</h3>
+                    
+                    <div class="contact-info-list" style="margin-bottom: 3rem;">
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">&#128205;</div>
+                            <div class="contact-info-details">
+                                <h4>Studio Address</h4>
+                                <p>First Floor, Sarvdhram B Sector, Kolar Road, Bhopal (Near Vishal Mega Mart), Madhya Pradesh - 462042</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">&#128338;</div>
+                            <div class="contact-info-details">
+                                <h4>Studio Business Hours</h4>
+                                <p>Monday to Sunday: 10:30 AM – 08:30 PM</p>
+                                <div style="margin-top: 0.5rem;">
+                                    <div class="open-status-badge open">
+                                        <span class="status-dot pulsing"></span>
+                                        <span class="status-text">Open Now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">&#9742;</div>
+                            <div class="contact-info-details">
+                                <h4>Call / WhatsApp</h4>
+                                <p>+91 9981286212</p>
+                                <div style="margin-top: 0.5rem; display: flex; gap: 1rem;">
+                                    <a href="tel:+919981286212" class="btn btn-outline" style="padding: 0.4rem 1.2rem; font-size: 0.72rem; border-radius: 30px;">Call Now</a>
+                                    <a href="https://wa.me/919981286212" target="_blank" class="btn btn-neon" style="padding: 0.4rem 1.2rem; font-size: 0.72rem; border-radius: 30px; box-shadow: none;">WhatsApp Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">&#9993;</div>
+                            <div class="contact-info-details">
+                                <h4>Email Inquiries</h4>
+                                <p>info@lotasbeautylounge.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Faux Map -->
+                    <div class="map-mockup-wrapper">
+                        <div class="map-card-popup">
+                            <h5>Lotas Makeup Studio</h5>
+                            <p>First Floor, Sarvdhram B Sector, Kolar Road, Near Vishal Mega Mart, Bhopal</p>
+                            <a href="https://maps.google.com" target="_blank" class="text-gradient" style="font-size: 0.65rem; font-weight: 700; text-transform: uppercase; margin-top: 0.5rem; display: inline-block;">Get Directions &rarr;</a>
+                        </div>
+                        <div class="map-mockup">
+                            <div class="map-route-line map-route-1"></div>
+                            <div class="map-route-line map-route-2"></div>
+                            <div class="map-route-line map-route-3"></div>
+                            <div class="map-route-line map-route-4"></div>
+                        </div>
+                        <div class="map-pin">
+                            <div class="map-pin-pulse"></div>
+                            <div class="map-pin-dot"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Message Form -->
+                <div class="glass-card" style="padding: 2.5rem; border-color: rgba(126, 87, 194, 0.25);">
+                    <h3 class="font-display text-gradient" style="font-size: 1.5rem; margin-bottom: 1rem;">Send a Message</h3>
+                    <p style="font-size: 0.8rem; color: var(--text-gray-light); margin-bottom: 2rem;">If you have any custom requests, booking queries, or feedback, send us a quick note. We will respond within 24 hours.</p>
+                    
+                    <form id="contact-inquiry-form" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent. We will get in touch with you shortly.'); this.reset();">
+                        <div class="form-group">
+                            <label for="contact-name" class="form-label">Full Name</label>
+                            <input type="text" id="contact-name" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group" style="margin-top: 1.5rem;">
+                            <label for="contact-phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="contact-phone" class="form-control" placeholder="10-digit mobile number" required>
+                        </div>
+                        
+                        <div class="form-group" style="margin-top: 1.5rem;">
+                            <label for="contact-email" class="form-label">Email Address (Optional)</label>
+                            <input type="email" id="contact-email" class="form-control" placeholder="name@domain.com">
+                        </div>
+                        
+                        <div class="form-group" style="margin-top: 1.5rem;">
+                            <label for="contact-message" class="form-label">Your Message</label>
+                            <textarea id="contact-message" class="form-control" rows="4" placeholder="Type your message here..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-neon" style="width: 100%; margin-top: 1rem;">Send Inquiry Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="section-header" style="margin-bottom: 3.5rem;">
+                <p>General Queries answered</p>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem;">
+                
+                <div class="glass-card" style="padding: 1.8rem;">
+                    <h4 class="font-display text-gradient" style="font-size: 1.15rem; margin-bottom: 0.8rem;">Is this salon strictly for females?</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-gray-light); line-height: 1.5;">Yes. Lotas Makeup Studio & Salon is an exclusive sanctuary designed strictly for ladies. Male entry is not allowed inside the lounge or waiting areas. This policy ensures total privacy, security, and absolute comfort for our female clients.</p>
+                </div>
+                
+                <div class="glass-card" style="padding: 1.8rem;">
+                    <h4 class="font-display text-gradient" style="font-size: 1.15rem; margin-bottom: 0.8rem;">Do I need an appointment, or can I walk in?</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-gray-light); line-height: 1.5;">Walk-ins are always welcome! However, to avoid waiting times (especially during weekends and wedding seasons), we highly recommend pre-scheduling your visit online through our Booking page or calling us directly.</p>
+                </div>
+                
+                <div class="glass-card" style="padding: 1.8rem;">
+                    <h4 class="font-display text-gradient" style="font-size: 1.15rem; margin-bottom: 0.8rem;">What products and cosmetic brands do you use?</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-gray-light); line-height: 1.5;">We prioritize skin health and hair texture. That's why we use only high-quality professional international brands, including Matrix Professional hair cosmetics, L'Oreal, and premium O3+ skin facial sets.</p>
+                </div>
+                
+                <div class="glass-card" style="padding: 1.8rem;">
+                    <h4 class="font-display text-gradient" style="font-size: 1.15rem; margin-bottom: 0.8rem;">Is the parlour air-conditioned?</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-gray-light); line-height: 1.5;">Yes, all our treatment rooms, styling chairs, and manicure desks are situated in fully air-conditioned spaces. You will enjoy a completely comfortable, cool, and relaxing spa visit.</p>
+                </div>
+                
+                <div class="glass-card" style="padding: 1.8rem;">
+                    <h4 class="font-display text-gradient" style="font-size: 1.15rem; margin-bottom: 0.8rem;">Where are you located exactly?</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-gray-light); line-height: 1.5;">We are located on the First Floor of Sarvdhram B Sector, Kolar Road, Bhopal. You can find us right near the Vishal Mega Mart. Directions and live calls are available on our maps mockup above.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid-4" style="gap: 3rem 1.5rem;">
+                <div>
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Lotas Makeup Studio & Salon" class="footer-logo-img">
+                    </div>
+                    <p class="footer-text">An exclusive, premium beauty and wellness oasis strictly for females. Located at Kolar Road, Bhopal. Affordable luxury treatments at your convenience.</p>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Owner & Salon</a></li>
+                        <li><a href="services.html">Services Price List</a></li>
+                        <li><a href="offers.html">Deals & Packages</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html?tab=hair">Hair Spa & Cut</a></li>
+                        <li><a href="services.html?tab=facials">Advanced Facials</a></li>
+                        <li><a href="services.html?tab=makeup">Bridal Makeup</a></li>
+                        <li><a href="services.html?tab=nails">Manicure & Nails</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Salon Sanctuary</h4>
+                    <ul class="footer-links">
+                        <li><a href="booking.html">Instant Appointment</a></li>
+                        <li><a href="reviews.html">Customer Reviews</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lotas Makeup Studio & Salon. All Rights Reserved. Strictly for Females.</p>
+                <p>Designed for Premium Beauty Experiences</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

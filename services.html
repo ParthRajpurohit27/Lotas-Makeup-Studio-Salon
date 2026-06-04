@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services catalog | Lotas Makeup Studio & Salon Bhopal</title>
+    <meta name="description" content="Explore the services catalog of Lotas Makeup Studio & Salon. Best ladies haircuts, hair treatments, premium facials, party makeup, and nail art on Kolar Road.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Subtle Interactive Particle Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Background Ambient Glowing Nodes -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="header scrolled" id="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="Lotas Makeup Studio & Salon" class="logo-img">
+            </a>
+            
+            <nav class="nav" id="navbar-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="offers.html" class="nav-link">Offers</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+                <a href="booking.html" class="nav-link">Book Now</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+                    <span class="icon">&#9788;</span>
+                </button>
+                <div class="burger-menu" id="burger-menu-btn" title="Toggle Mobile Navigation">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="section-padding" style="padding-top: 100px;">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 3rem;">
+                <p>Premium Treatments at Affordable Rates</p>
+                <h2>Our Studio Experiences</h2>
+            </div>
+
+            <!-- Service Category Filters -->
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">All Services</button>
+                <button class="filter-tab" data-filter="hair">Hair Design</button>
+                <button class="filter-tab" data-filter="facials">Facials & Skin</button>
+                <button class="filter-tab" data-filter="skincare">Waxing & Skincare</button>
+                <button class="filter-tab" data-filter="makeup">Professional Makeup</button>
+                <button class="filter-tab" data-filter="nails">Nails Care</button>
+            </div>
+
+            <!-- Services Grid container -->
+            <div class="grid-3" id="services-grid-container">
+                
+                <!-- === HAIR SERVICES === -->
+                <div class="glass-card service-card grid-item" data-category="hair">
+                    <div class="service-img-container">
+                        <img src="assets/service_hair.png" alt="Hair Spa" class="service-card-img">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header-row">
+                            <h3 class="service-title">Matrix Nourishing Hair Spa</h3>
+                            <span class="service-price">₹499</span>
+                        </div>
+                        <p class="service-description">Rejuvenating hair spa using authentic Matrix nourishing creams. Smooths dry, frizzy textures and repairs environmental damage.</p>
+                        <a href="booking.html?service=hair_spa" class="btn btn-neon" style="width: 100%; padding: 0.6rem; font-size: 0.75rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="glass-card service-card grid-item" data-category="hair">
+                    <div class="service-img-container">
+                        <img src="assets/service_hair.png" alt="Haircut styling" class="service-card-img">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header-row">
+                            <h3 class="service-title">Signature Haircut & Design</h3>
+                            <span class="service-price">₹299</span>
+                        </div>
+                        <p class="service-description">Custom haircuts (layer, step, bob) tailored to your facial structure, including a relaxing hair wash and blow-dry finish.</p>
+                        <a href="booking.html?service=hair_cut" class="btn btn-neon" style="width: 100%; padding: 0.6rem; font-size: 0.75rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="glass-card service-card grid-item" data-category="hair">
+                    <div class="service-img-container">
+                        <img src="assets/service_hair.png" alt="Hair Smoothening" class="service-card-img">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header-row">
+                            <h3 class="service-title">Matrix Permanent Smoothening</h3>
+                            <span class="service-price">₹2,999</span>
+                        </div>
+                        <p class="service-description">Get sleek, straight, and incredibly soft hair with long-lasting premium smoothing formulas and expert heat sealing.</p>
+                        <a href="booking.html?service=hair_smooth" class="btn btn-neon" style="width: 100%; padding: 0.6rem; font-size: 0.75rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="glass-card service-card grid-item" data-category="hair">
+                    <div class="service-img-container">
+                        <img src="assets/service_hair.png" alt="Keratin Treatment" class="service-card-img">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header-row">
+                            <h3 class="service-title">L'Oreal Intense Keratin Care</h3>
+                            <span class="service-price">₹1,999</span>
+                        </div>
+                        <p class="service-description">Intense protein infusion therapy for dry, chemically treated, or damaged hair. Restores natural strength and glossy shine.</p>
+                        <a href="booking.html?service=hair_keratin" class="btn btn-neon" style="width: 100%; padding: 0.6rem; font-size: 0.75rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <!-- === FACIAL SERVICES === -->
+                <div class="glass-card service-card grid-item" data-category="facials">
+                    <div class="service-img-container">
+                        <img src="assets/service_skin.png" alt="Gold Facial" class="service-card-img">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header-row">
+                            <h3 class="service-title">Gold Luminous Face Therapy</h3>
+                            <span class="service-price">₹799</span>
+                        </div>
+                        <p class="service-description">Classic active gold facial set. Improves blood circulation and skin elasticity, leaving a bright radiant sheen.</p>
+                        <a href="booking.html?service=facial_gold" class="btn btn-neon" style="width: 100%; padding: 0.6rem; font-size: 0.75rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="glass-card service-card grid-item" data-category="facials">
+                    <div class="service-img-container">
+                        <img src="assets/service_skin.png" alt="O3+ Facial" class="service-card-img">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header-row">
+                            <h3 class="service-title">O3+ Professional Skin Glow</h3>
+                            <span class="service-price">₹1,499</span>
+                        </div>
+                        <p class="service-description">Premium professional facial set. Target pigmentation, dark spots, and suntans to refresh skin tone.</p>
+                        <a href="booking.html?service=facial_o3" class="btn btn-neon" style="width: 100%; padding: 0.6rem; font-size: 0.75rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="glass-card service-card grid-item" data-category="facials">
+                    <div class="service-img-container">
+                        <img src="assets/service_skin.png" alt="Hydrafacial" class="service-card-img">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header-row">
+                            <h3 class="service-title">Hydrafacial Cleanse & Hydrate</h3>
+                            <span class="service-price">₹2,499</span>
+                        </div>
+                        <p class="service-description">Advanced vacuum suction cleansing, exfoliation, and serum hydration. Restores healthy skin elasticity and removes blackheads.</p>
+                        <a href="booking.html?service=facial_hydra" class="btn btn-neon" style="width: 100%; padding: 0.6rem; font-size: 0.75rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <!-- === SKINCARE & WAXING SERVICES === -->
+                <div class="glass-card service-card grid-item" data-category="skincare">
+                    <div class="service-img-container">
+                        <img src="assets/service_skin.png" alt="Herbal Waxing" class="service-card-img">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header-row">
+                            <h3 class="service-title">Herbal Skin Grooming Pack</h3>
+                            <span class="service-price">₹799</span>
+                        </div>
+                        <p class="service-description">Full arms, full legs, and underarms waxing using soothing honey-based herbal waxes. Clean results with minimum pain.</p>
+                        <a href="booking.html?service=wax_body" class="btn btn-neon" style="width: 100%; padding: 0.6rem; font-size: 0.75rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="glass-card service-card grid-item" data-category="skincare">
+                    <div class="service-img-container">
+                        <img src="assets/service_skin.png" alt="Detan cleanup" class="service-card-img">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header-row">
+                            <h3 class="service-title">Fruit Nourishing Clean-Up</h3>
+                            <span class="service-price">₹399</span>
+                        </div>
+                        <p class="service-description">Gentle exfoliation with refreshing fruit extracts, deep pore cleaning, and a refreshing face pack to clear dirt.</p>
+                        <a href="booking.html?service=skin_fruit" class="btn btn-neon" style="width: 100%; padding: 0.6rem; font-size: 0.75rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <!-- === MAKEUP SERVICES === -->
+                <div class="glass-card service-card grid-item" data-category="makeup">
+                    <div class="service-img-container">
+                        <img src="assets/service_makeup.png" alt="Bridal Makeup" class="service-card-img">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header-row">
+                            <h3 class="service-title">Nikky Bawa Style Bridal</h3>
+                            <span class="service-price">₹6,999</span>
+                        </div>
+                        <p class="service-description">Masterclass bridal look designed by Nikky Bawa-trained lead artist Tanu. Custom eyelashes, hair draping, and HD finish.</p>
+                        <a href="booking.html?service=makeup_bridal" class="btn btn-neon" style="width: 100%; padding: 0.6rem; font-size: 0.75rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="glass-card service-card grid-item" data-category="makeup">
+                    <div class="service-img-container">
+                        <img src="assets/service_makeup.png" alt="Party Makeup" class="service-card-img">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header-row">
+                            <h3 class="service-title">Elite HD Party Glow</h3>
+                            <span class="service-price">₹1,999</span>
+                        </div>
+                        <p class="service-description">Flawless makeup profile with high-definition styling for weddings, receptions, and parties. Long-lasting, light wear.</p>
+                        <a href="booking.html?service=makeup_party" class="btn btn-neon" style="width: 100%; padding: 0.6rem; font-size: 0.75rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <!-- === NAIL SERVICES === -->
+                <div class="glass-card service-card grid-item" data-category="nails">
+                    <div class="service-img-container">
+                        <img src="assets/service_nails.png" alt="Nail Art" class="service-card-img">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header-row">
+                            <h3 class="service-title">Creative Gel Extensions</h3>
+                            <span class="service-price">₹999</span>
+                        </div>
+                        <p class="service-description">Beautiful acrylic gel nail extensions styled with custom glitter, chrome, or hand-painted aesthetic designs.</p>
+                        <a href="booking.html?service=nails_gel" class="btn btn-neon" style="width: 100%; padding: 0.6rem; font-size: 0.75rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="glass-card service-card grid-item" data-category="nails">
+                    <div class="service-img-container">
+                        <img src="assets/service_nails.png" alt="Pedicure Manicure" class="service-card-img">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header-row">
+                            <h3 class="service-title">Luxe Spa Pedicure & Manicure</h3>
+                            <span class="service-price">₹799</span>
+                        </div>
+                        <p class="service-description">Exfoliating arm and leg scrub, massage, nail shaping, dead skin cleaning, and premium nail paint finish.</p>
+                        <a href="booking.html?service=nails_pedi" class="btn btn-neon" style="width: 100%; padding: 0.6rem; font-size: 0.75rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid-4" style="gap: 3rem 1.5rem;">
+                <div>
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Lotas Makeup Studio & Salon" class="footer-logo-img">
+                    </div>
+                    <p class="footer-text">An exclusive, premium beauty and wellness oasis strictly for females. Located at Kolar Road, Bhopal. Affordable luxury treatments at your convenience.</p>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Owner & Salon</a></li>
+                        <li><a href="services.html">Services Price List</a></li>
+                        <li><a href="offers.html">Deals & Packages</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html?tab=hair">Hair Spa & Cut</a></li>
+                        <li><a href="services.html?tab=facials">Advanced Facials</a></li>
+                        <li><a href="services.html?tab=makeup">Bridal Makeup</a></li>
+                        <li><a href="services.html?tab=nails">Manicure & Nails</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Salon Sanctuary</h4>
+                    <ul class="footer-links">
+                        <li><a href="booking.html">Instant Appointment</a></li>
+                        <li><a href="reviews.html">Customer Reviews</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lotas Makeup Studio & Salon. All Rights Reserved. Strictly for Females.</p>
+                <p>Designed for Premium Beauty Experiences</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const tabFilter = params.get('tab');
+            if (tabFilter) {
+                const targetTab = document.querySelector(`.filter-tab[data-filter="${tabFilter}"]`);
+                if (targetTab) {
+                    targetTab.click();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
